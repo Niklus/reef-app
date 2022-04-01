@@ -1,0 +1,24 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css";
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #eee;
+  padding-top: 10px;
+}
+
+header,
+.pages {
+  text-align: center;
+}
+
+.pages {
+  margin-top: 20px;
+}
+
+.users {
+  margin-left: 100px;
+  font-weight: bold;
+}
