@@ -8,8 +8,8 @@ export function contact({ name }) {
       placeholder="Enter your name" 
       id="exampleInput" 
       oninput="changeName()"
-      value=${name}
-    >
+      value="${name}"
+    />
     <br/>
     <h3><i>${name}<i/></h3>
   `;
