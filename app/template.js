@@ -11,7 +11,7 @@ export const template = (data, elem) => {
       ${((data) => {
         if (data.route === "" || data.route === "#home") {
           return home(data);
-        } else if ((data.route = "#about")) {
+        } else if (data.route === "#about") {
           return about(data);
         }
       })(data)}
