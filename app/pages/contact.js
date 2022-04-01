@@ -1,7 +1,7 @@
 export function contact({ name }) {
   return /*html*/ `
     <h2>Contact</h2>
-    <p>Enter Your Name below an see the magic</p>
+    <p>Enter your name below and see the magic</p>
     <label for="exampleInput">Your Name</label>
     <input 
       type="text" 
