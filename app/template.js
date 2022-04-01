@@ -8,13 +8,13 @@ export const template = (data, elem) => {
       <a class="button button-primary" href='#about'>About</a>
     </header>
     <div class="pages">
-      ${((data) => {
-        if (data.route === "" || data.route === "#home") {
+      ${((route) => {
+        if (route === "" || route === "#home") {
           return home(data);
-        } else if (data.route === "#about") {
+        } else if (route === "#about") {
           return about(data);
         }
-      })(data)}
+      })(data.route)}
     </div>
     <hr/>
     <div class="users">
