@@ -1,6 +1,7 @@
 import { data } from "./app/data.js";
 import { listeners } from "./app/listeners.js";
 import { template } from "./app/template.js";
+import { changeRoute } from "./utils/changeRoute.js";
 
 const app = new Reef("#app", {
   data,
@@ -10,6 +11,6 @@ const app = new Reef("#app", {
 
 app.render();
 
-window.addEventListener("hashchange", () => {
-  app.data.route = window.location.hash;
+window.addEventListener("hashchange", (event) => {
+  changeRoute(app, event);
 });

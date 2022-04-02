@@ -1,7 +1,7 @@
 export function users({ users }) {
   return /*html*/ `
     <div class="users">
-      <button onclick="getUsers()">Get Users</button>
+      <button class="button-primary" onclick="getUsers()">Get Users</button>
       <div>
         ${(() => {
           return users
