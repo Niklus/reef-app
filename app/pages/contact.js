@@ -1,6 +1,8 @@
-export function contact({ name }) {
+import { users } from "../components/users.js";
+
+export function contact(data) {
   return /*html*/ `
-    <h2>Contact</h2>
+    <h2>Contact Page</h2>
     <p>Enter your name below and see the magic</p>
     <label for="exampleInput">Your Name</label>
     <input 
@@ -8,9 +10,11 @@ export function contact({ name }) {
       placeholder="Enter your name" 
       id="exampleInput" 
       oninput="changeName()"
-      value="${name}"
+      value="${data.name}"
     />
     <br/>
-    <h3><i>${name}<i/></h3>
+    <h3><i>${data.name}<i/></h3>
+    <hr/>
+    ${users(data)}
   `;
 }

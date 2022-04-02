@@ -7,18 +7,26 @@ body {
 header {
   background-color: #eee;
   padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-header,
-.pages {
-  text-align: center;
+h1 {
+  font-size: 35px;
 }
 
 .pages {
   margin-top: 20px;
 }
 
-.users {
+.users,
+.pages {
   margin-left: 100px;
-  font-weight: bold;
+  margin-right: 100px;
+  text-align: center;
+}
+
+.users div {
+  margin-top: 30px;
 }
