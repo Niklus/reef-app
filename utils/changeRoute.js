@@ -7,13 +7,13 @@ export function changeRoute(app, event) {
     hash === "#about" ||
     hash === "#contact"
   ) {
-    app.data.route = hash;
+    app.data.route = hash; // This will re-render the application
   } else {
     /**
      * For all the other anchor tags that need to link a section within a page
      * Remove hash from url after jumping to a section allowing the
      * user to stay on same page when they do a refresh
      */
-    history.replaceState("", "", event.oldURL);
+    history.replaceState(null, "", event.oldURL);
   }
 }
