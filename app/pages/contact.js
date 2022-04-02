@@ -13,7 +13,7 @@ export function contact(data) {
       value="${data.name}"
     />
     <br/>
-    <h3><i>${data.name}<i/></h3>
+    <h3><i>${data.name}</i></h3>
     <hr/>
     ${users(data)}
   `;
