@@ -1,5 +1,5 @@
 import { data } from "./app/data.js";
-import { listeners } from "./app/listeners.js";
+import { listeners } from "./app/listeners/index.js";
 import { template } from "./app/template.js";
 import { changeRoute } from "./utils/changeRoute.js";
 
